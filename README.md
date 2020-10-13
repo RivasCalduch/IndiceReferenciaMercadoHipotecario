@@ -6,7 +6,7 @@ El objetivo de la presente práctica es el de desarrollar un proyecto de web scr
 
 ## Miembros del equipo
 
-José Luis Rivas Calduch y Mariano Jimenez Barca
+José Luis Rivas Calduch y Mariano Jiménez Barca
 
 ## Ficheros de codigo fuente
 
