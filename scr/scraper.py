@@ -89,10 +89,9 @@ if status == 200 :
             'ahe':re.sub("[\t ]", "", ahe),
             'ced':re.sub("[\t ]", "", ced)}
    
-     print (row)
-
-
+     rows.append(row)
+  df = pd.DataFrame(rows)
+  df.to_csv("historico_indices.csv", index=False)
+  print ("fin")  # para saber que ha terminado
 else :
   print('La conexión con la página ha sido erronea!!')
-        
-
