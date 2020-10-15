@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 # 13-10-2020
-# Authors JoeLuis Rivas Calduch y Mariano Jimenez Barca
+# Authors Jose Luis Rivas Calduch y Mariano Jimenez Barca
 # Web Scrapping con Python
 # 
 
 
 from bs4 import BeautifulSoup;
-#import pandas as pd
+import pandas as pd
 import requests;
 import re;
 
@@ -26,7 +26,8 @@ if status == 200 :
   
   #table_title = soup.findAll("table")[0]
   table_data = soup.findAll("table")[1]
-
+  
+  rows = [] # declaro el objeto donde se va a guardar el resultado
 
   currentIndex=12 # evita el rowspan 
   for row in table_data.findAll("tr"):
@@ -90,8 +91,13 @@ if status == 200 :
             'ced':re.sub("[\t ]", "", ced)}
    
      rows.append(row)
+  
   df = pd.DataFrame(rows)
-  df.to_csv("historico_indices.csv", index=False)
+  
+  df.to_csv("../csv/historico_indices.csv", index=False)
+  
   print ("fin")  # para saber que ha terminado
+
 else :
+  
   print('La conexión con la página ha sido erronea!!')
