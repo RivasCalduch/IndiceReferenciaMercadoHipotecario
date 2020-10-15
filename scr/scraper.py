@@ -32,7 +32,7 @@ if status == 200 :
   currentIndex=12 # evita el rowspan 
   for row in table_data.findAll("tr"):
      columns = row.findAll("td")
-     #print (len(columns))
+
      if currentIndex%12 == 0: # en la posicion 0 de este caso esta el año
       ano = (columns[0].text)  # AÑO
       mes =  (columns[1].text)  # mes
@@ -48,7 +48,7 @@ if status == 200 :
       ahe = (columns[11].text) # AHE
       ced = (columns[12].text) # Ced
      elif currentIndex%12 == 1:
-      #print (columns[0].text) # en esta posición esta el rowspan
+
       mes =   (columns[1].text)  # mes
       tentesp = (columns[2].text)  # T.ENT. ESPAÑA
       zeuro = (columns[3].text)  # ZONA EURO
@@ -74,7 +74,7 @@ if status == 200 :
       ceca = (columns[9].text) # CECA 
       ahe = (columns[10].text) # AHE
       ced = (columns[11].text) # Ced 
-      #print (columns[12].text) # solo hay 12 columnas  
+
      currentIndex = currentIndex + 1
      row = {'ano': re.sub("[\t ]", "", ano), 
             'mes': re.sub("[\t ]", "", mes), 
@@ -93,8 +93,7 @@ if status == 200 :
      rows.append(row)
   
   df = pd.DataFrame(rows)
-  
-  
+   
   df.to_csv("../csv/historico_indices.csv", index=False)
   
   print ("fin")  # para saber que ha terminado
