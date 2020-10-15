@@ -94,6 +94,7 @@ if status == 200 :
   
   df = pd.DataFrame(rows)
   
+  
   df.to_csv("../csv/historico_indices.csv", index=False)
   
   print ("fin")  # para saber que ha terminado
