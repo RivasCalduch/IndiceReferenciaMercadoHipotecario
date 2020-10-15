@@ -11,6 +11,7 @@ import pandas as pd
 import requests;
 import re;
 import os
+from datetime import date
 
 str = 'http://www.ahe.es/bocms/sites/ahenew/estadisticas/indices-referencia/archivos/historico-de-indices.htm?version=106'
 
