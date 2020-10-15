@@ -8,8 +8,11 @@ El objetivo de la presente práctica es el de desarrollar un proyecto de web scr
 
 José Luis Rivas Calduch y Mariano Jiménez Barca
 
-## Ficheros de codigo fuente
+## Ficheros de código fuente
+* **scr/scraper.py:** Realiza el proceso de scraping.
 
+## Ficheros resultado del scraping
+* **csv/historico_indices.csv:** Fichero en csv con el resultado de *scraper.py*.
 
 ## Recursos
 
