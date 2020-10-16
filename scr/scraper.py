@@ -10,6 +10,8 @@ from bs4 import BeautifulSoup;
 import pandas as pd
 import requests;
 import re;
+import os
+from datetime import date
 
 str = 'http://www.ahe.es/bocms/sites/ahenew/estadisticas/indices-referencia/archivos/historico-de-indices.htm?version=106'
 
@@ -27,6 +29,7 @@ if status == 200 :
   #table_title = soup.findAll("table")[0]
   table_data = soup.findAll("table")[1]
   
+  df = []
   rows = [] # declaro el objeto donde se va a guardar el resultado
 
   currentIndex=12 # evita el rowspan 
@@ -94,8 +97,14 @@ if status == 200 :
   
   df = pd.DataFrame(rows)
   
+  if os.path.exists('csv') == False:
+    os.mkdir('csv')
   
-  df.to_csv("../csv/historico_indices.csv", index=False)
+  today = date.today()
+  todayTofile = today.strftime("%b-%d-%Y")   #https://www.programiz.com/python-programming/datetime/current-datetime
+  fileName = 'csv/historico_indices_'+todayTofile+'.csv'  
+  
+  df.to_csv(fileName, index=False)
   
   print ("fin")  # para saber que ha terminado
 
