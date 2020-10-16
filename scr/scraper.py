@@ -102,7 +102,7 @@ if status == 200 :
   
   today = date.today()
   todayTofile = today.strftime("%b-%d-%Y")   #https://www.programiz.com/python-programming/datetime/current-datetime
-  fileName = 'csv/historico_indices_'+todayTofile+'.csv'  
+  fileName = '../csv/historico_indices_'+todayTofile+'.csv'  
   
   df.to_csv(fileName, index=False)
   
