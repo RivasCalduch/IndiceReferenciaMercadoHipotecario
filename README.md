@@ -1,4 +1,4 @@
- ![Alt text](img/logo_uoc.png?raw=true "Logo UOC") 
+ ![Logo UOC](img/logo_uoc.png?raw=true) 
 
 # Práctica 1: Web Scraping
 
