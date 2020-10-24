@@ -1,4 +1,4 @@
- ![Logo UOC](img/logo_uoc.png?raw=true) 
+ ![Logo UOC](img/logo_uoc_peq.png?raw=true) 
 
 # Práctica 1: Web Scraping
 
