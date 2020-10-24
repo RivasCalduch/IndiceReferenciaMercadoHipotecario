@@ -212,6 +212,12 @@ if status == 200 :
     result = pd.merge(dfIndex, dfINE, how = 'left', on=['ano','mes'])  # merging by 'ano' + 'mes' https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html
     
     result = result.fillna('')  #taking out NaN. subs by ''
+    
+    # creating a new date column 
+    
+    fecha = result['ano'].astype('str') + '-' + result['mes'].astype('str') + '-' + '01'
+   
+    result['date'] = pd.to_datetime(fecha)
         
     # creating directory in case it is not existis df = df.fillna('')
 
