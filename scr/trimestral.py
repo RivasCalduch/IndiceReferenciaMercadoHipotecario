@@ -1,7 +1,13 @@
+#!/usr/bin/env python
+# coding: utf-8
+# 13-10-2020
+# Authors Jose Luis Rivas Calduch y Mariano Jimenez Barca
+# Web Scrapping con Python (serie trimestral)
+ 
 # MERGE de dos ficheros Excell del ministerio de Fomento y una llamada a API del INE 
-# número total de transacciones de viviendas y su importe recogido del ministerio de fomento
-# población recogido del INE,
-# Datos trimestrales excepto población que es semestral. He convertido los datos del INe a trimestrales.
+# numero total de transacciones de viviendas y su importe recogido del ministerio de fomento
+# poblacion recogido del INE,
+# Datos trimestrales excepto poblacion que es semestral. He convertido los datos del INe a trimestrales.
 
 import pandas as pd
 import requests
@@ -118,8 +124,7 @@ for x in datos['Data']:
     if periodo%2 == 0:
         periodo = 1
     else: 
-        periodo = 3
-    
+        periodo = 3  
     
     # como es semestral doblo el registro y le doy el mismo valor a los dos trimestres pero el periodo lo cambio
     
@@ -137,7 +142,6 @@ for x in datos['Data']:
     rowsINEPob.append(rowINE2)
     
 dfowsINEPob = pd.DataFrame(rowsINEPob)
-
 
 result = pd.merge(result, dfowsINEPob, how = 'left', on=['ano','trimestre'])  # merging by 'ano' + 'trimestre' https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html
     
