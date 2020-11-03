@@ -46,14 +46,23 @@ def from_INE(code, num_data, data):
         valor = x['Valor']
         periodo = x['FK_Periodo']
         ano = x['Anyo']
-        if data ==6:                   # when daata is semestral periodo = each 6 months.
-            if periodo%2 == 0:
+        if data ==6:                   # when data is semestral periodo = each 6 months.
+            if periodo == 26:
                 periodo = 1
             else: 
                 periodo = 7
     
+        if data ==3:                   # when data is by quarter, periodo = each 3 months.
+            if periodo == 19:
+                periodo = 1
+            if periodo == 20: 
+                periodo = 4
+            if periodo == 21:
+                periodo = 7
+            if periodo == 22: 
+                periodo = 10
         rowINE = {
-           code: int(valor),
+           code: valor,
            'mes': int(periodo),
            'ano': int(ano)
             }
@@ -270,6 +279,11 @@ if status == 200 :
     # población "CP335" semestral
     dfINE_Pob = from_INE("CP335",200,6)
 
+    # PIB a precios de mercado. variación trimestral 
+    dfINE_PIB1 = from_INE("CNTR4805",400,3)
+
+    # PIB a general variación trimestral
+    dfINE_PIB2 = from_INE("IPV949",400,3)
 
     # merging by 'ano' + 'mes' https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html
     
@@ -278,7 +292,8 @@ if status == 200 :
     result = pd.merge(result,  dfrowsValor, how = 'left', on=['ano','mes']) 
     result = pd.merge(result,  dfINE_Viv,   how = 'left', on=['ano','mes']) 
     result = pd.merge(result,  dfINE_Hip,   how = 'left', on=['ano','mes']) 
-    
+    result = pd.merge(result,  dfINE_PIB1,   how = 'left', on=['ano','mes'])
+    result = pd.merge(result,  dfINE_PIB2,   how = 'left', on=['ano','mes'])
     
     result = result.fillna('')  #taking out NaN. subs by ''
         
@@ -306,3 +321,4 @@ if status == 200 :
 else :
   
     print('Conection to url has not been right!!')
+   
