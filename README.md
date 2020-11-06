@@ -16,8 +16,7 @@ José Luis Rivas Calduch y Mariano Jiménez Barca
 * **scr/scraper_def.py:** Realiza el proceso de scraping.
 
 ## Ficheros con el dataset resultado del scraping
-* **csv/historico_indices_{fecha obtención}.csv:** Fichero en csv con el resultado de *scraper.py*.
-* **csv/historico_indices_trimestral_{fecha obtención}.csv:** Fichero en csv con el resultado de *scraper.py*.
+* **csv/historico_indices_hipotecario_vivienda_{fecha obtención}.csv:** Fichero en csv con el resultado de *scraper_def.py*.
 
 ## Ficheros gráfica
 * **chart/chart.ipynb:** Jupyter Notebook con el codigo del desarrollo de la gráfica.
