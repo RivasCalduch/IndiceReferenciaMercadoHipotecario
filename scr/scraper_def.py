@@ -309,10 +309,10 @@ if status == 200 :
     
     todayTofile = today.strftime("%b-%d-%Y")   #https://www.programiz.com/python-programming/datetime/current-datetime
     
-    # If SO is windows '../csv/historico_indices_'+todayTofile+'.csv'
-    # If SO is linux 'csv/historico_indices_'+todayTofile+'.csv'
+    # If SO is windows '../csv/historico_indices_hipotecario_vivienda_'+todayTofile+'.csv'
+    # If SO is linux 'csv/historico_indices_hipotecario_vivienda_'+todayTofile+'.csv'
         
-    fileName = 'csv/historico_indices_'+todayTofile+'.csv'  
+    fileName = 'csv/historico_indices_hipotecario_vivienda_'+todayTofile+'.csv'  
   
     result.to_csv(fileName, index=False)
   
