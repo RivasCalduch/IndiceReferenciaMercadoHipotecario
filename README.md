@@ -13,8 +13,7 @@ El proyecto consiste en analizar si existe alguna relación entre el coste del d
 José Luis Rivas Calduch y Mariano Jiménez Barca
 
 ## Ficheros de código fuente
-* **scr/scraper.py:** Realiza el proceso de scraping mensual.
-* **scr/scraper_trimestral.py:** Realiza el proceso de scraping de la serie trimestral.
+* **scr/scraper_def.py:** Realiza el proceso de scraping.
 
 ## Ficheros con el dataset resultado del scraping
 * **csv/historico_indices_{fecha obtención}.csv:** Fichero en csv con el resultado de *scraper.py*.
