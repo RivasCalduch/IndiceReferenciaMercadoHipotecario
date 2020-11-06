@@ -4,9 +4,9 @@
 
 ## Descripción
 
-El objetivo de la presente práctica es el de desarrollar un proyecto de web scraping para la asignatura *Tipología y ciclo de los datos*, perteneciente al Máster en Ciencia de Datos de la Universitat Oberta de Catalunya (UOC).
+El objetivo de la práctica es el de desarrollar un proyecto de web scraping para la asignatura Tipología y ciclo de los datos, perteneciente al Máster en Ciencia de Datos de la Universitat Oberta de Catalunya (UOC).
 
-El proyecto consiste en analizar si existe alguna relación entre el coste del dinero y el mercado de la vivienda. Para ello se han obtenido las series históricas mensuales de los índices de referencia del mercado hipotecario español publicados por la *Asociación Hipotecaria Española* en su pagina web, para la obtención de la información se ha desarrollado un script que obtiene los datos mediante web scrapping. Por otro lado, se han la serie histórica de compraventa mesual de viviendas publica por *Instituto Nacional de Estadísticas Español* (INE), para la obtención de la información se ha desarrollado un script de conexión a la API del INE. Tambien se han extraido información del *Ministerio de Fomento* de las series historicas trimestrales del número de transacciones inmobiliarias y del precio medio de la vivienda a nivel estatal.
+El proyecto consiste en analizar si existe alguna relación entre el coste del dinero y el mercado de la vivienda. Para ello se han obtenido las series históricas mensuales de los índices de referencia del mercado hipotecario español publicados por la Asociación Hipotecaria Española en su página web, para la obtención de la información se ha desarrollado un script que obtiene los datos mediante web scrapping. Por otro lado, se han obtenido la serie histórica de compraventa mensual de viviendas publicada por el Instituto Nacional de Estadísticas Español (INE), para la obtención de la información se ha desarrollado un script de conexión a la API del INE. También se han extraído información del Ministerio de Fomento de las series históricas trimestrales del número de transacciones inmobiliarias y del precio medio de la vivienda a nivel estatal.
 
 ## Miembros del equipo
 
