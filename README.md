@@ -18,10 +18,6 @@ José Luis Rivas Calduch y Mariano Jiménez Barca
 ## Ficheros con el dataset resultado del scraping
 * **csv/historico_indices_hipotecario_vivienda_{fecha obtención}.csv:** Fichero en csv con el resultado de *scraper_def.py*.
 
-## Ficheros gráfica
-* **chart/chart.ipynb:** Jupyter Notebook con el codigo del desarrollo de la gráfica.
-* **chart/chart.png:** Imagen png con la gráfica.
-
 ## Recursos
 
 * **Subirats Maté, Laila; Pérez Trenard, Diego O.; Calvo González, Mireia (2019)** Introducción al ciclo de la vida de los datos. UOC
