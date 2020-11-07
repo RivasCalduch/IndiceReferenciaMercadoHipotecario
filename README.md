@@ -1,7 +1,5 @@
  ![Logo UOC](img/logo_uoc_peq.png?raw=true) 
  
- https://www.pexels.com/es-es/foto/arquitectura-casas-casas-de-colores-diseno-arquitectonico-1370704/
- 
  
 # Práctica 1: Web Scraping
 
