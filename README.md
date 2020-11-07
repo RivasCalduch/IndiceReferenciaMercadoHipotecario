@@ -68,7 +68,11 @@ La pandemia ha bajado de nuevo los precios pero intentar conocer la evolución d
 
 ## Licencia
 
-El mercado inmobiliario en España aporta aproximadamente el 10.5% del PIB (datos de 2019 https://es.statista.com/estadisticas/549634/aportacion-de-las-activid
+La licencia se recoge en el documento LICENSE de este mismo proyecto.
+
+## Codigo Zenodo
+
+El codigo zenodo es...
 
 ## Recursos
 
