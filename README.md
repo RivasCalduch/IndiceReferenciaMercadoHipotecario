@@ -16,17 +16,26 @@ El proyecto consiste en analizar el mercado inmobiliario español en su conjunto
 
 El mercado inmobiliario en España aporta aproximadamente el 10.5% del IB (datos de 2019 https://es.statista.com/estadisticas/549634/aportacion-de-las-actividades-inmobiliarias-al-pib-en-espana/) Por eso es interesante conocer la evolución del conjunto de precios en consonancia con otras variables macro estatales (precio del dinero, población, PIB...)
 
-Para ello se han obtenido las series históricas mensuales de los índices de referencia del mercado hipotecario español publicados por la Asociación Hipotecaria Española en su página web, la serie histórica de compraventa mensual de viviendas publicada por el Instituto Nacional de Estadísticas Español (INE) y las series históricas trimestrales del número de transacciones inmobiliarias y del precio medio de la vivienda a nivel estatal en formato excell del Ministerio de Fomento.
-
 Los organismos elegidos proporcionan la información de manera oficial y por lo tanto los datos son veraces y fiables.
 
 ## Título del Dataset
 
+
+
 ## Descripción del Dataset
 
-El data set se corresponde con una relación temporal de una relación de indices económicos relacionados con el mercado hipotecario extraidos de diferentes fuentes.
+El data set se corresponde con una relación temporal de indices económicos relacionados con el mercado hipotecario extraidos de diferentes fuentes.
 
-Los campos son los siguientes:
+Para ello se han obtenido las series históricas mensuales de los índices de referencia del mercado hipotecario español publicados por la Asociación Hipotecaria Española en su página web, la serie histórica de compraventa mensual de viviendas, la población y el PIB publicados por el Instituto Nacional de Estadísticas Español (INE) y las series históricas trimestrales del número de transacciones inmobiliarias y del precio medio de la vivienda a nivel estatal en formato excel del Ministerio de Fomento.
+
+
+## Representación gráfica
+
+![Representacion_grafica](img/foto2.PNG?raw=true) 
+
+## Contenido
+
+El contenido del dataset es el siguiente:
 
 ano = Año referencia del indicador
 mes = mes referencia del indicador
@@ -48,11 +57,6 @@ HPT34618 = hipotecas de viviendas. Origen INE. Dato mensual. en unidades
 CP335 = población. Origen INE. Dato semestral. en unidades
 CNTR4805 = PIB a precios de mencado. variación trimestral. Origen INE. en %
 IPV949 = PIB general. variación trimestral. Origen INE. en %
-
-
-## Representación gráfica
-
-![Representacion_grafica](img/foto1.PNG?raw=true) 
 
 ## Recursos
 
