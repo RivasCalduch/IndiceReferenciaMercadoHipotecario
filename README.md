@@ -39,24 +39,43 @@ Para ello se han obtenido las series históricas mensuales de los índices de re
 El contenido del dataset es el siguiente:
 
 ano: Año referencia del indicador
+
 mes: mes referencia del indicador
+
 tentesp: Tipo medio préstamos hipotecarios adquisición de vivienda libre A más de tres años territorio España. Origen A.H.E. .Dato mensual. en %
+
 zeuro:  Tipo medio préstamos hipotecarios adquisición de vivienda libre. ZONA EURO. Origen A.H.E. Dato mensual. en %
+
 euribor: Euribor. Dato mensual. Origen A.H.E.. en %            
+
 mibor: Indice Mibor. Dato Mensual. Origen A.H.E.. en %
+
 irs: Interes Rate Swap. Dato Mensual. Origen A.H.E.. en %
+
 deuda: Interés deuda. Dato Mensual. Origen A.H.E.. en %
+
 bancos: IRPH. Tipo medio préstamos hipo. a más de 3 años adq.vivienda libre. Tipo de interés bancos. Origen A.H.E.. Dato mensual. en %
+
 cajas: IRPH. Tipo medio préstamos hipo. a más de 3 años adq.vivienda libre. Tipo de interés cajas . Origen A.H.E..Dato mensual. en %
+
 ceca: IRPH. Tipo medio préstamos hipo. a más de 3 años adq.vivienda libre. Tipo de interés CECA. Origen A.H.E.. Dato mensul. en %
+
 ahe: Referencia tipo hipotecario A.H.E. Origen A.H.E.. Dato trimestral. en %
+
 ced: referencia ced. Origen A.H.E.. Dato mensual. en %
+
 34010110.XLS: transacciones de viviendas. Origen Ministerio de Fomento. Dato trimestral. en unidades.
+
 34020110.XLS: importe de las transacciones de viviendas. Origen Ministerio de Fomento. Dato trimestral. en euros.
+
 ETDP1826: número de compraventa de viviendas. Origen INE. Dato mensual. en unidades
+
 HPT34618: hipotecas de viviendas. Origen INE. Dato mensual. en unidades
+
 CP335: población. Origen INE. Dato semestral. en unidades
+
 CNTR4805: PIB a precios de mencado. variación trimestral. Origen INE. en %
+
 IPV949: PIB general. variación trimestral. Origen INE. en %
 
 Por un lado, los datos del AHE se han recogido mediante un scraper en Python de la página http://www.ahe.es/bocms/sites/ahenew/estadisticas/indices-referencia/archivos/historico-de-indices.htm?version=106
