@@ -8,18 +8,17 @@ José Luis Rivas Calduch y Mariano Jiménez Barca
 
 ## Descripción
 
-El objetivo de la práctica es el de desarrollar un proyecto de web scraping para la asignatura Tipología y ciclo de los datos, perteneciente al Máster en Ciencia de Datos de la Universitat Oberta de Catalunya (UOC).
+El objetivo de la práctica es el de capturar datos relativos al mercado inmobiliario para posteriormente realizar una analisis de los mismos. Esta practica se engloba dentro del la asignatura Tipología y ciclo de los datos, perteneciente al Máster en Ciencia de Datos de la Universitat Oberta de Catalunya (UOC).
 
-El proyecto consiste en analizar el mercado inmobiliario español en su conjunto desde el punto de vista temporal y si existe alguna relación entre el coste del dinero, población y el mercado de la vivienda en España. 
+Los datos a capturar se corresponden con el mercado inmobiliario español en su conjunto desde el punto de vista temporal y si existe alguna relación entre el coste del dinero, población y el mercado de la vivienda en España. 
 
 ## Contexto
 
-El mercado inmobiliario en España aporta aproximadamente el 10.5% del IB (datos de 2019 https://es.statista.com/estadisticas/549634/aportacion-de-las-actividades-inmobiliarias-al-pib-en-espana/) Por eso es interesante conocer la evolución del conjunto de precios en consonancia con otras variables macro estatales (precio del dinero, población, PIB...)
-
-Los organismos elegidos proporcionan la información de manera oficial y por lo tanto los datos son veraces y fiables.
+Dado que existen muchos datos oficiales al respecto, hemos procurado obtener datos de diferentes fuentes y mediante distintos métodos de cara a poner en práctica varias técnicas. 
 
 ## Título del Dataset
 
+historico_indices_hipotecario_vivienda
 
 
 ## Descripción del Dataset
@@ -27,7 +26,6 @@ Los organismos elegidos proporcionan la información de manera oficial y por lo 
 El data set se corresponde con una relación temporal de indices económicos relacionados con el mercado hipotecario extraidos de diferentes fuentes.
 
 Para ello se han obtenido las series históricas mensuales de los índices de referencia del mercado hipotecario español publicados por la Asociación Hipotecaria Española en su página web, la serie histórica de compraventa mensual de viviendas, la población y el PIB publicados por el Instituto Nacional de Estadísticas Español (INE) y las series históricas trimestrales del número de transacciones inmobiliarias y del precio medio de la vivienda a nivel estatal en formato excel del Ministerio de Fomento.
-
 
 ## Representación gráfica
 
@@ -57,6 +55,20 @@ HPT34618 = hipotecas de viviendas. Origen INE. Dato mensual. en unidades
 CP335 = población. Origen INE. Dato semestral. en unidades
 CNTR4805 = PIB a precios de mencado. variación trimestral. Origen INE. en %
 IPV949 = PIB general. variación trimestral. Origen INE. en %
+
+Por un lado, los datos del AHE se han recogido mediante un scraper en Python. Los datos del INE se han recogido mediante acceso vía API del INE. Los datos del ministerio de Fomento se han recogido a partir del acceso a un fichero Excel.
+
+Cada una de estas técnicas necesitan un procesado posterior así como un fusionado.
+
+## Inspiración
+
+El mercado inmobiliario en España aporta aproximadamente el 10.5% del PIB (datos de 2019 https://es.statista.com/estadisticas/549634/aportacion-de-las-actividades-inmobiliarias-al-pib-en-espana/). Tras la crisis financiera de 2008 los precios de las viviendas vuelven a estar en términos casi semejantes a antes de la crisis.
+
+La pandemia ha bajado de nuevo los precios pero intentar conocer la evolución del conjunto de precios en consonancia con otras variables macro estadísticas es interesante de cara a poder predecir  otras burbujas o situaciones similares. 
+
+## Licencia
+
+El mercado inmobiliario en España aporta aproximadamente el 10.5% del PIB (datos de 2019 https://es.statista.com/estadisticas/549634/aportacion-de-las-activid
 
 ## Recursos
 
