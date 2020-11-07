@@ -52,7 +52,7 @@ IPV949 = PIB general. variación trimestral. Origen INE. en %
 
 ## Representación gráfica
 
-![Representacion_grafica](img/foto1.gif?raw=true) 
+![Representacion_grafica](img/foto1.PNG?raw=true) 
 
 ## Recursos
 
