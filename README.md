@@ -14,7 +14,7 @@ El proyecto consiste en analizar el mercado inmobiliario español en su conjunto
 
 ## Contexto
 
-El mercado inmobiliario en España aporta aproximadamente el 10.5% del IB (datos de 2019 https://es.statista.com/estadisticas/549634/aportacion-de-las-actividades-inmobiliarias-al-pib-en-espana/) Dada su importancia nos parecía interesante conocer la evolución del conjunto de precios en consonancia con otras variables macro estatales (precio del dinero, población, PIB...)
+El mercado inmobiliario en España aporta aproximadamente el 10.5% del IB (datos de 2019 https://es.statista.com/estadisticas/549634/aportacion-de-las-actividades-inmobiliarias-al-pib-en-espana/) Por eso es interesante conocer la evolución del conjunto de precios en consonancia con otras variables macro estatales (precio del dinero, población, PIB...)
 
 Para ello se han obtenido las series históricas mensuales de los índices de referencia del mercado hipotecario español publicados por la Asociación Hipotecaria Española en su página web, la serie histórica de compraventa mensual de viviendas publicada por el Instituto Nacional de Estadísticas Español (INE) y las series históricas trimestrales del número de transacciones inmobiliarias y del precio medio de la vivienda a nivel estatal en formato excell del Ministerio de Fomento.
 
@@ -22,7 +22,7 @@ Los organismos elegidos proporcionan la información de manera oficial y por lo 
 
 ## Título del Dataset
 
-## DEscripción del Dataset
+## Descripción del Dataset
 
 El data set se corresponde con una relación temporal de una relación de indices económicos relacionados con el mercado hipotecario extraidos de diferentes fuentes.
 
