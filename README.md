@@ -35,36 +35,40 @@ Para ello se han obtenido las series históricas mensuales de los índices de re
 
 El contenido del dataset es el siguiente:
 
-ano = Año referencia del indicador
-mes = mes referencia del indicador
-tentesp = Tipo medio préstamos hipotecarios adquisición de vivienda libre A más de tres años territorio España. Origen A.H.E. .Dato mensual. en %
-zeuro =  Tipo medio préstamos hipotecarios adquisición de vivienda libre. ZONA EURO. Origen A.H.E. Dato mensual. en %
-euribor = Euribor. Dato mensual. Origen A.H.E.. en %            
-mibor = Indice Mibor. Dato Mensual. Origen A.H.E.. en %
-irs = Interes Rate Swap. Dato Mensual. Origen A.H.E.. en %
-deuda = Interés deuda. Dato Mensual. Origen A.H.E.. en %
-bancos = IRPH. Tipo medio préstamos hipo. a más de 3 años adq.vivienda libre. Tipo de interés bancos. Origen A.H.E.. Dato mensual. en %
-cajas = IRPH. Tipo medio préstamos hipo. a más de 3 años adq.vivienda libre. Tipo de interés cajas . Origen A.H.E..Dato mensual. en %
-ceca = IRPH. Tipo medio préstamos hipo. a más de 3 años adq.vivienda libre. Tipo de interés CECA. Origen A.H.E.. Dato mensul. en %
-ahe = Referencia tipo hipotecario A.H.E. Origen A.H.E.. Dato trimestral. en %
-ced = referencia ced. Origen A.H.E.. Dato mensual. en %
-34010110.XLS = transacciones de viviendas. Origen Ministerio de Fomento. Dato trimestral. en unidades.
-34020110.XLS = importe de las transacciones de viviendas. Origen Ministerio de Fomento. Dato trimestral. en euros.
-ETDP1826 = número de compraventa de viviendas. Origen INE. Dato mensual. en unidades
-HPT34618 = hipotecas de viviendas. Origen INE. Dato mensual. en unidades
-CP335 = población. Origen INE. Dato semestral. en unidades
-CNTR4805 = PIB a precios de mencado. variación trimestral. Origen INE. en %
-IPV949 = PIB general. variación trimestral. Origen INE. en %
+ano: Año referencia del indicador
+mes: mes referencia del indicador
+tentesp: Tipo medio préstamos hipotecarios adquisición de vivienda libre A más de tres años territorio España. Origen A.H.E. .Dato mensual. en %
+zeuro:  Tipo medio préstamos hipotecarios adquisición de vivienda libre. ZONA EURO. Origen A.H.E. Dato mensual. en %
+euribor: Euribor. Dato mensual. Origen A.H.E.. en %            
+mibor: Indice Mibor. Dato Mensual. Origen A.H.E.. en %
+irs: Interes Rate Swap. Dato Mensual. Origen A.H.E.. en %
+deuda: Interés deuda. Dato Mensual. Origen A.H.E.. en %
+bancos: IRPH. Tipo medio préstamos hipo. a más de 3 años adq.vivienda libre. Tipo de interés bancos. Origen A.H.E.. Dato mensual. en %
+cajas: IRPH. Tipo medio préstamos hipo. a más de 3 años adq.vivienda libre. Tipo de interés cajas . Origen A.H.E..Dato mensual. en %
+ceca: IRPH. Tipo medio préstamos hipo. a más de 3 años adq.vivienda libre. Tipo de interés CECA. Origen A.H.E.. Dato mensul. en %
+ahe: Referencia tipo hipotecario A.H.E. Origen A.H.E.. Dato trimestral. en %
+ced: referencia ced. Origen A.H.E.. Dato mensual. en %
+34010110.XLS: transacciones de viviendas. Origen Ministerio de Fomento. Dato trimestral. en unidades.
+34020110.XLS: importe de las transacciones de viviendas. Origen Ministerio de Fomento. Dato trimestral. en euros.
+ETDP1826: número de compraventa de viviendas. Origen INE. Dato mensual. en unidades
+HPT34618: hipotecas de viviendas. Origen INE. Dato mensual. en unidades
+CP335: población. Origen INE. Dato semestral. en unidades
+CNTR4805: PIB a precios de mencado. variación trimestral. Origen INE. en %
+IPV949: PIB general. variación trimestral. Origen INE. en %
 
-Por un lado, los datos del AHE se han recogido mediante un scraper en Python. Los datos del INE se han recogido mediante acceso vía API del INE. Los datos del ministerio de Fomento se han recogido a partir del acceso a un fichero Excel.
+Por un lado, los datos del AHE se han recogido mediante un scraper en Python de la página http://www.ahe.es/bocms/sites/ahenew/estadisticas/indices-referencia/archivos/historico-de-indices.htm?version=106
 
-Cada una de estas técnicas necesitan un procesado posterior así como un fusionado.
+Los datos del INE se han recogido mediante acceso vía API del INE. https://www.ine.es/dyngs/DataLab/es/manual.html?cid=45
+
+Los datos del ministerio de Fomento se han recogido desde https://apps.fomento.gob.es/BoletinOnline2 cuya salida eran ficheros excel.
+
+Cada una de estas técnicas necesitan un procesado posterior así como un fusionado por fecha.
 
 ## Inspiración
 
-El mercado inmobiliario en España aporta aproximadamente el 10.5% del PIB (datos de 2019 https://es.statista.com/estadisticas/549634/aportacion-de-las-actividades-inmobiliarias-al-pib-en-espana/). Tras la crisis financiera de 2008 los precios de las viviendas vuelven a estar en términos casi semejantes a antes de la crisis.
+El mercado inmobiliario en España aporta aproximadamente el 10.5% del PIB (datos de 2019 https://es.statista.com/estadisticas/549634/aportacion-de-las-actividades-inmobiliarias-al-pib-en-espana/). Tras la crisis financiera de 2008 y una bajade de casi un 30% del precio, de nuevo los precios de las viviendas vuelven a estar en términos casi semejantes a antes de la crisis (sin contar efecto pandemia).
 
-La pandemia ha bajado de nuevo los precios pero intentar conocer la evolución del conjunto de precios en consonancia con otras variables macro estadísticas es interesante de cara a poder predecir  otras burbujas o situaciones similares. 
+Intentar conocer la evolución del conjunto de precios en consonancia con otras variables macro estadísticas es interesante de cara a poder predecir  otras burbujas o situaciones similares. 
 
 ## Licencia
 
