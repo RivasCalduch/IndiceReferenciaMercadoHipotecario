@@ -15,7 +15,7 @@ José Luis Rivas Calduch y Mariano Jiménez Barca
 
 El proyecto consiste en analizar si existe alguna relación entre el coste del dinero y el mercado de la vivienda.  Para ello se ha obtenido por un lado información de la Asociación Hipotecaria Española (AHE) que se encarga de recopilar información de diferentes fuentes sobre todo lo relacionado a la evolución del mercado hipotecario Español, y por otro lado se ha obtenido información del Instituto Nacional de Estadísticas Español (INE) y del Ministerio de Fomento sobre los principales indicadores del mercado de la vivienda
 
-En el apartado WIKI se puede encontrar el contenido del mismo
+En el apartado WIKI se puede encontrar una descripción del contenido del mismo
 
 
 
